@@ -31,7 +31,7 @@ with(hpc, plot(DateAndTime, as.numeric(as.character(Voltage)), type="l", xlab="d
 with(hpc, plot(DateAndTime, as.integer(as.character(Sub_metering_1)), type="l", xlab="", ylab="Energy sub metering"))
 with(hpc, lines(DateAndTime, as.integer(as.character(Sub_metering_2)),col="red"))
 with(hpc, lines(DateAndTime, as.integer(as.character(Sub_metering_3)),col="blue"))
-legend("topright", col=c("black","red","blue"), c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"),lty=c(1,1), bty="n", cex=.5) 
+legend("topright", legend=c("Sub_metering_1        ","Sub_metering_2        ", "Sub_metering_3        "), col=c("black","red","blue"), lty=c(1,1), bty="n", cex=.5) 
 
 # - Generate plot 2,2
 with(hpc, plot(DateAndTime, as.numeric(as.character(Global_reactive_power)), type="l", xlab="datetime", ylab="Global_reactive_power"))
